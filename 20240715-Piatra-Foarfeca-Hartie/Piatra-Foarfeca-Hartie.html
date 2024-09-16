@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Piatra, Foarfeca si Hartie</title>
+    <link rel="stylesheet" href="css/style.css">
+
+<body class="body-pfh-negru">
+
+    <div class="main-content">
+        <p class="titlu">Piatra, Foarfeca si Hartie</p>
+        <br>
+        <button class="move-button" onclick="
+            playGame('Piatra');
+            ">
+            <img class="move-icon" src="images/Piatra.png">
+        </button>
+
+        <button class="move-button" onclick="
+            playGame('Foarfeca');
+            ">
+            <img class="move-icon" src="images/Foarfeca.png">
+        </button>
+
+        <button class="move-button" onclick="
+            playGame('Hartie');
+            ">
+            <img class="move-icon" src="images/Hartie.png">
+        </button>
+        <br>
+        <br>
+
+        <p class="js-result result"></p>
+
+        <p class="js-moves moves"></p>
+
+        <p class="js-score"></p>
+        <br>
+        <button class="reset-score-button" onclick="
+            score.castiguri = 0;
+            score.pierderi = 0;
+            score.egalitati = 0;
+            localStorage.removeItem('score');
+            updateScoreElement();
+        ">Reseteaza Scorul
+        </button>
+
+    </div>
+
+    <script src="scripts/10-2-Piatra-Foarfeca-Hartie.js">
+
+    </script>
+</body>
+
+</html>
+
