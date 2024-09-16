@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Piatra, Foarfeca si Hartie - dar cu Functii Avansate</title>
+    <link rel="stylesheet" href="css/style.css">
+
+<body class="body-pfh-negru">
+
+    <div class="main-content">
+
+        <p><a href="00-Cuprins.html">Cuprins</a></p>
+        <br>
+        <h1>Piatra, Foarfeca si Hartie - dar cu Functii Avansate</h1>
+        <br>
+        <br>
+        <br>
+
+
+
+        <p class="titlu">Piatra, Foarfeca si Hartie</p>
+        <br>
+
+        <button class="move-button js-piatra-button">
+            <img class="move-icon" src="images/Piatra.png">
+        </button>
+
+        <button class="move-button js-foarfeca-button">
+            <img class="move-icon" src="images/Foarfeca.png">
+        </button>
+
+        <button class="move-button js-hartie-button">
+            <img class="move-icon" src="images/Hartie.png">
+        </button>
+
+        <br>
+        <br>
+
+        <p class="js-result result"></p>
+
+        <p class="js-moves moves"></p>
+
+        <p class="js-score"></p>
+
+        <br>
+
+        <button class="reset-score-button" onclick="
+            score.castiguri = 0;
+            score.pierderi = 0;
+            score.egalitati = 0;
+            localStorage.removeItem('score');
+            updateScoreElement();
+        ">Reseteaza Scorul
+        </button>
+
+        <button class="auto-play-button js-auto-play-button" onclick="
+            autoPlay();
+        ">Auto Play
+        </button>
+
+    </div>
+
+    <script src="scripts/12-2-Piatra-Foarfeca-Hartie.js"></script>
+</body>
+
+</html>
+
